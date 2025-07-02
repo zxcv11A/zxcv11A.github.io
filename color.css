@@ -1,0 +1,158 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-image: url('img/พื้นหลัง.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #3d5a33;
+}
+
+header h2 {
+    font-size: 25px;
+    color: #608f45;
+    margin-top: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #a3d977;
+    color: #2c2c2c;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #7eb54f;
+    color: white;
+     background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.divider {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #b4e197, #a1c86c, #b4e197);
+    margin: 55px ;
+    border-radius: 10px;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 22px;
+    padding: 0.5px 30px;
+}
+
+.animal-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    animation: slideUp 1s ease;
+
+}
+
+.animal-box {
+    text-align: center;
+    width: 220px;
+
+}
+
+
+
+.animal-box img {
+    width: 100%;
+    height: auto;
+    height: 200px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.animal-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2d3b2c;
+}
+
+footer {
+    text-align: center;
+    font-size: 25px;
+    color: #555;
+    margin-top: 20px;
+}
+.asd img {
+    width: 15%;
+    margin-left: auto;
+}
+.asd a{
+    font-size: 100%;
+}
+.animal-box1 img {
+    width: 20%;
+    height: auto;
+    height: 200px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: block; 
+    margin:  auto;
+}
+.animal-box1 p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2d3b2c;
+    text-align: center;
+}
+.animal-box img:hover {
+    transform: scale(1.08);
+    transition: transform 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 1; transform: translateY(50px); }
+    to { opacity: 2; transform: translateY(0); }
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animal-box a:active img {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
