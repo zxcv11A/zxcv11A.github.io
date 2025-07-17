@@ -534,8 +534,9 @@ header h1 {
     color: #FFFFFF; 
     font-weight: 600; 
 }
-@media screen and (max-widthd: 768px) {
-    body {
-        background: lightgray;
+@media (min-width: 480px) and (max-width: 767px) {
+    body{
+        font-size: 15px;
+        background: #eee;
     }
 }
