@@ -42,15 +42,13 @@ body.detail-active-bg {
 }
 
 .video-background-container video {
-    min-width: 50%;
-    min-height: 20%;
-    width: 80%;
-    height: 95%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover; 
+    top: 0;
+    left: 0;
+    width: 100vw;  /* เต็มความกว้างหน้าจอ */
+    height: 100vh; /* เต็มความสูงหน้าจอ */
+    object-fit: cover;  /* ไม่ผิดสัดส่วน */
+    z-index: 0;
 }
 
 .video-overlay {
